@@ -4,5 +4,5 @@ This repository contains relevant documents for AutoArea: Area Annotator Softwar
 ## Installation:
 ```bash
 git clone https://github.com/your-username/AutoArea.git
-cd CircuitFlow
+cd AutoArea
 ```
