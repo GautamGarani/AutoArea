@@ -86,6 +86,7 @@ Event: which AutoCAD listens for.
 <br>
 Callback: The function to run when the event happens.
 <br>
+
 | Event Name                 | Meaning                      |
 | -------------------------- | ---------------------------- |
 | `:vlr-saveComplete`        | Fires after drawing is saved |
