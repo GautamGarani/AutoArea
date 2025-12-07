@@ -82,7 +82,8 @@ Syntax of reactors:
 
 1. The owner-object: It determines what <b>object</b> the reactor is associated with. The reactor fires when that <p>particular</b> object changes. 
 2. (event.callback): <br>
-Event: which AutoCAD listens for
+Event: which AutoCAD listens for.
+<br>
 Callback: The function to run when the event happens.
 <br>
 | Event Name                 | Meaning                      |
