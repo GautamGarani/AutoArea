@@ -106,6 +106,7 @@ The callback function must have the format:
 To run the code everytime a drawing is created, save the lisp code into acaddoc.lsp.
 
 Sample directory layout: 
+
 D:\AutoCAD_Automation\
 │
 ├── lisp\
