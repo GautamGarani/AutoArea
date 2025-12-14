@@ -34,10 +34,10 @@ def main():
             center_point = APoint(center_x, center_y)
 
             # --- CREATE CENTERED TEXT ---
-            # We use AddText with the CORRECT order: (Point, Width, Text)
+            # We use AddMText with the CORRECT order: (Point, Width, Text)
             # Width = 0 means the text box will auto-expand to fit the text
             text_string = f"{area:.2f}"
-            mtext_obj = acad.model.AddText(center_point, 0, text_string)
+            mtext_obj = acad.model.AddMText(center_point, 0, text_string)
 
             # Set Text Height
             mtext_obj.Height = TEXT_HEIGHT
