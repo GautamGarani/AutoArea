@@ -50,9 +50,5 @@ def main():
 
     print("Done! Check your drawing.")
 
-<<<<<<< HEAD
-=======
-
->>>>>>> refs/remotes/origin/main
 if __name__ == "__main__":
     main()
