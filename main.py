@@ -3,13 +3,17 @@ from pyautocad import Autocad, APoint
 
 def main():
     acad = Autocad(create_if_not_exists=True)
-    print(f"Connected to document, and annotating: {acad.doc.Name}")
+    print(f"Connected to document: {acad.doc.Name}")
+
     # Set the text height relative to your drawing size
     # If your area text is still small, increase this number (e.g., to 100 or 200)
-    TEXT_HEIGHT = 100
 
+    scale_factor_height=0.15
+    scale_factor_width=0.10
+    
     for obj in acad.iter_objects():
-        if obj.ObjectName == "AcDbPolyline":
+        if obj.ObjectName == "AcDbPolyline" and obj.color !=3 :
+
             # 1. Auto-Fix Open Polylines
             if not obj.Closed:
                 obj.Closed = True
@@ -31,14 +35,17 @@ def main():
 
             center_point = APoint(center_x, center_y)
 
+            width_polygon=max(x_coords)-min(x_coords)
+            height_polygon=max(y_coords)-min(y_coords)
+
             # --- CREATE CENTERED TEXT ---
             # We use AddMText with the CORRECT order: (Point, Width, Text)
             # Width = 0 means the text box will auto-expand to fit the text
             text_string = f"{area:.2f}"
-            mtext_obj = acad.model.AddMText(center_point, 0, text_string)
+            mtext_obj = acad.model.AddMText(center_point,width_polygon*0.10, text_string)
 
             # Set Text Height
-            mtext_obj.Height = TEXT_HEIGHT
+            mtext_obj.Height = scale_factor * height_polygon
 
             # Set Alignment to "Middle Center"
             # 1 = TopLeft, 5 = MiddleCenter (This is the magic number)
@@ -49,6 +56,7 @@ def main():
             print(f"Labeled polygon at {center_x:.2f}, {center_y:.2f}")
 
     print("Done! Check your drawing.")
+
 
 if __name__ == "__main__":
     main()
