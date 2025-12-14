@@ -3,15 +3,13 @@ from pyautocad import Autocad, APoint
 
 def main():
     acad = Autocad(create_if_not_exists=True)
-    print(f"Connected to document: {acad.doc.Name}")
-
+    print(f"Connected to document, and annotating: {acad.doc.Name}")
     # Set the text height relative to your drawing size
     # If your area text is still small, increase this number (e.g., to 100 or 200)
     TEXT_HEIGHT = 100
 
     for obj in acad.iter_objects():
         if obj.ObjectName == "AcDbPolyline":
-
             # 1. Auto-Fix Open Polylines
             if not obj.Closed:
                 obj.Closed = True
@@ -52,6 +50,5 @@ def main():
 
     print("Done! Check your drawing.")
 
-
-if _name_ == "_main_":
+if __name__ == "__main__":
     main()
