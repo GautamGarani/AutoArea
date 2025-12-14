@@ -45,7 +45,7 @@ def main():
             mtext_obj = acad.model.AddMText(center_point,width_polygon*scale_factor_width, text_string)
 
             # Set Text Height
-            mtext_obj.Height = scale_factor * height_polygon
+            mtext_obj.Height = scale_factor_height * height_polygon
 
             # Set Alignment to "Middle Center"
             # 1 = TopLeft, 5 = MiddleCenter (This is the magic number)
