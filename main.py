@@ -42,7 +42,7 @@ def main():
             # We use AddMText with the CORRECT order: (Point, Width, Text)
             # Width = 0 means the text box will auto-expand to fit the text
             text_string = f"{area:.2f}"
-            mtext_obj = acad.model.AddMText(center_point,width_polygon*0.10, text_string)
+            mtext_obj = acad.model.AddMText(center_point,width_polygon*scale_factor_width, text_string)
 
             # Set Text Height
             mtext_obj.Height = scale_factor * height_polygon
