@@ -8,8 +8,8 @@ def main():
     # Set the text height relative to your drawing size
     # If your area text is still small, increase this number (e.g., to 100 or 200)
 
-    scale_factor_height=0.15
-    scale_factor_width=0.10
+    scale_factor_height=0.075
+    scale_factor_width=0.075
     
     for obj in acad.iter_objects():
         if obj.ObjectName == "AcDbPolyline" and obj.color !=3 :
