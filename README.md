@@ -1,5 +1,5 @@
 <p align="center">
-<img src="AutoArea_Logo.png" width=300 height=300>
+<img src="AutoArea_Logo.png" width=300 height=300 style="border: 5px solid blue;">
 </p>
 
 # AutoArea
