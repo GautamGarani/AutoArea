@@ -20,6 +20,7 @@ Manual calculation and annotation of areas in AutoCAD drawings is **time-consumi
 - Listens to drawing events using reactors
 <br>
 - Invokes Python scripts via `startapp`
+  
 ### Python Layer
 - Extracts entity and geometry data
 <br>
