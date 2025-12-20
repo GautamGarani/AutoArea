@@ -14,22 +14,18 @@ Manual calculation and annotation of areas in AutoCAD drawings is **time-consumi
 
 
 ## 🏗️ System Architecture
-
 ### AutoCAD (AutoLISP)
 - Loads automation at startup (`acaddoc.lsp`)
 <br>
 - Listens to drawing events using reactors
 <br>
 - Invokes Python scripts via `startapp`
-
 ### Python Layer
 - Extracts entity and geometry data
 <br>
 - Computes areas accurately
 <br>
 - Generates annotations and metadata
-
-
 
 ## 🛠️ Tools & Technologies
 - **AutoLISP** – AutoCAD automation and event reactors
@@ -38,8 +34,6 @@ Manual calculation and annotation of areas in AutoCAD drawings is **time-consumi
 <br>
 - **AutoCAD** – Target CAD platform
 
-
-
 ## 🏢 Applications
 AutoArea is applicable in:
 - Architectural drawings  
@@ -47,7 +41,6 @@ AutoArea is applicable in:
 - Interior design  
 
 Manual workflows in such cases are slow and error-prone, making automation highly beneficial.
-
 
 ## 👥 Contributors
 - **Gautam Garani** | https://github.com/GautamGarani  
