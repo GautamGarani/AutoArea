@@ -24,7 +24,7 @@ AutoLISP – AutoCAD automation and event reactors
 <br>
 Python – Geometry processing and logic
 <br>
-AutoCAD – Target CAD platfor
+AutoCAD – Target CAD platform
 
 ## Applications: 
 AutoArea finds applicability in the design and plan of architectural drawings, site-planning, interior design. Manual workflows in such cases are error-prone and slow.
