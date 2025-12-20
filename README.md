@@ -3,7 +3,7 @@
 </p>
 
 # AutoArea
-AutoArea is area-annotator software for AutoCAD drawings. AutoArea is an AutoCAD automation tool that integrates AutoLISP and Python to automatically calculate, annotate, and manage area information in CAD drawings. It is designed to streamline repetitive drafting tasks and reduce manual errors by triggering area calculations and annotations during drawing events such as file save.
+AutoArea is area-annotator software for AutoCAD drawings. AutoArea is an AutoCAD automation tool that integrates AutoLISP and Python to automatically calculate, annotate, and manage area information in CAD drawings. It is designed to streamline repetitive drafting tasks and reduce manual errors by triggering area calculations and annotations during drawing events such as file save. AutoArea was designed as a small college project.
 
 ## Problem Statement:
 Manual calculation and annotation of areas in AutoCAD drawings is time-consuming, error-prone, and inconsistent across projects. Existing workflows require repeated user intervention and often lead to outdated annotations when drawings are modified.
