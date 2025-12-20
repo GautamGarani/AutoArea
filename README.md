@@ -9,7 +9,7 @@ It streamlines repetitive drafting tasks and reduces manual errors by triggering
 AutoArea was designed as a small college project.
 
 
-## ❗ Problem Statement
+## Problem Statement
 Manual calculation and annotation of areas in AutoCAD drawings is **time-consuming**, **error-prone**, and **inconsistent** across projects. Existing workflows require repeated user intervention and often lead to **outdated annotations** when drawings are modified.
 
 
