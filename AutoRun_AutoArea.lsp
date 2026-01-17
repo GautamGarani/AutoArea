@@ -2,8 +2,8 @@
 ;------------------------------------------------------------
 
 (defun AutoArea:run_py (reactor params)
-  (startapp "\"C:/Users/GAUTAM GARANI/AppData/Local/Programs/Python/Python314/python.exe\""
-	    "\"C:/Users/GAUTAM GARANI/Documents/Code/Git/AutoArea/main.py\""
+  (startapp "\"the-path-to-python.exe\""
+	    "\"the-path-to-main.py\""
   )
 )
 
